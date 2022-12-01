@@ -96,7 +96,6 @@ public class testandoFolha {
         WebElement btSelecionar = webdriver.findElement(By.xpath("//*[@id=\"ds_formAtendimento\"]/section/fieldset/div/select"));
         Select select = new Select(btSelecionar);
         select.selectByIndex(2);
-        String text = "Anuncie Conosco";
         Assertions.assertTrue(select.getFirstSelectedOption().getText().contains("Anuncie Conosco"));
 
 
